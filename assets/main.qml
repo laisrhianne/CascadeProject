@@ -23,17 +23,13 @@ TabbedPane {
         EXP {
             id: exp
         }
-    
-    
+        
+        
+       
     }
     Tab {
-        title: ("Favoritos")
-        description: "Adicione aos favoritos"
-        Favs {
-            id: favs
-            
-        }
-    
+        title: "Favoritos"
     }
-
 }
+    
+
