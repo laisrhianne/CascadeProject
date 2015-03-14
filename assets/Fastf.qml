@@ -20,7 +20,7 @@ Page {
         }
         Container {
             
-            preferredHeight: 770
+            preferredHeight: 775
             horizontalAlignment: HorizontalAlignment.Center
             topPadding: 50
             bottomPadding: 50
