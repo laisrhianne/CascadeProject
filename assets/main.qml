@@ -29,6 +29,9 @@ TabbedPane {
     }
     Tab {
         title: "Favoritos"
+        Favs {
+            id: favoritos
+        }
     }
 }
     
