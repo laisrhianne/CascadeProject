@@ -20,7 +20,7 @@ Page {
         }
         Container {
             
-            preferredHeight: 800
+            preferredHeight: 770
             horizontalAlignment: HorizontalAlignment.Center
             topPadding: 50
             bottomPadding: 50
@@ -35,7 +35,7 @@ Page {
                         bobs.visible = true
                         burgerking.visible = false
                         giraffas.visible = false
-                        habbibs.visible = false
+                        habibs.visible = false
                         mcdonalds.visible = false
                         subway.visible = false
                     }
@@ -43,7 +43,7 @@ Page {
                         bobs.visible = false
                         burgerking.visible = true
                         giraffas.visible = false
-                        habbibs.visible = false
+                        habibs.visible = false
                         mcdonalds.visible = false
                         subway.visible = false
                     }
@@ -51,23 +51,22 @@ Page {
                         bobs.visible = false
                         burgerking.visible = false
                         giraffas.visible = true
-                        habbibs.visible = false
+                        habibs.visible = false
                         mcdonalds.visible = false
                         subway.visible = false
                     }
-                    if (selectedOption === optionHabbibs) {
+                    if (selectedOption === optionHabibs) {
                         bobs.visible = false
                         burgerking.visible = false
                         giraffas.visible = false
-                        habbibs.visible = true
+                        habibs.visible = true
                         mcdonalds.visible = false
-                        subway.visible = false
-                    }
+                        subway.visible = false                    }
                     if (selectedOption === optionMcDonalds) {
                         bobs.visible = false
                         burgerking.visible = false
                         giraffas.visible = false
-                        habbibs.visible = false
+                        habibs.visible = false
                         mcdonalds.visible = true
                         subway.visible = false
                     }
@@ -75,7 +74,7 @@ Page {
                         bobs.visible = false
                         burgerking.visible = false
                         giraffas.visible = false
-                        habbibs.visible = false
+                        habibs.visible = false
                         mcdonalds.visible = false
                         subway.visible = true
                     }
@@ -95,8 +94,8 @@ Page {
                     text: "Giraffas"
                 }
                 Option {
-                    id: optionHabbibs
-                    text: "Habbibs"
+                    id: optionHabibs
+                    text: "Habibs"
                 }
                 Option {
                     id: optionMcDonalds
@@ -118,9 +117,10 @@ Page {
 Maceió Shopping - (82) 3357-1471
 Endereços:  
 Maceió Shopping, Loja 202 - Avenida Comendador Gustavo Paiva, 2990 - Mangabeiras
+Parque Shopping Maceió. Piso 03, loja 3044, Avenida Comendador Gustavo Paiva, 5945 - Cruz das Almas
+G Barbosa - Av Empresario Carlos Silva Nogueira, 620, Jatiúca
 Rua Professora Higia Vasconcelos, 401 - Ponta Verde
-Avenida Engenheiro Paulo Brandão Nogueira, s/n - Jatiúca
-Parque Shopping Maceió. Piso 03, loja 3044, Avenida Comendador Gustavo Paiva, 5945 - Cruz das Almas"
+Avenida Engenheiro Paulo Brandão Nogueira, s/n - Jatiúca"
                 }
             }
             Container {
@@ -128,8 +128,8 @@ Parque Shopping Maceió. Piso 03, loja 3044, Avenida Comendador Gustavo Paiva, 5
                 visible: false
                 Label {
                     multiline: true
-                    text: "Endereços: 
-Av. Com Gustavo Paiva 2990 - Loja 253"
+                    text: "Endereço: 
+Maceió Shopping - Av. Com Gustavo Paiva 2990 - Loja 253"
                 }
             }
             Container {
@@ -140,19 +140,25 @@ Av. Com Gustavo Paiva 2990 - Loja 253"
                     text: "Telefones: 
 Maceió Shopping - (82) 3377-0070/8869-1131
 Parque Shopping - (82) 3025-0882
+Shopping Pátio - (82) 8850-6918
 Endereços: 
 Maceió Shopping - Piso 3, Loja 3045, Avenida Comendador Gustavo Paiva, 2990 - Mangabeiras
 Shopping Pátio - loja 301, Avenida Menino Marcelo 3800, Tabuleiro do Martins
-Parque Shopping - Loja 278, Avenida Comendador Gustavo Paiva, 5945 - Cruz das Almas"
+Parque Shopping - Loja 278, Avenida Comendador Gustavo Paiva, 5945 - Cruz das Almas
+Shopping Pátio - Loja 301, Avenida Menino Marcelo 3800,Cidade Universitária"
                 }
             }
             Container {
-                id: habbibs
+                id: habibs
                 visible: false
                 Label {
                     multiline: true
                     text: "Telefones:
-Endereços:"
+Maceió Shopping - (82) 3316-0901
+Jatiúca - (82) 3235-5870
+Endereços:
+Maceió Shopping -Avenida Comendador Gustavo Paiva, 2990 - Mangabeiras
+Avenida Álvaro Otacílio, 4515 - Jatiúca"
                 }
             }
             Container {
@@ -160,9 +166,15 @@ Endereços:"
                 visible: false
                 Label {
                     multiline: true
-                    text: "Telefone: 3827-2675
+                    text: "Telefone: 
+Maceió Shopping - (82) 357-1313)
+Jatiúca - (82) 3235-2372
 Endereços: 
-Av. Fernandes Lima"
+Avenida Fernandes Lima, 609 , Farol 
+Maceió Shopping - lojas 206B e 207, Avenida Comend. Gustavo Paiva, 2990, Mangabeiras
+Avenida Álvaro Otacílio, 4225 , Jatiúca 
+Parque Shopping - Avenida Comendador Gustavo Paiva, s/n , Cruz das Almas
+Shopping Pátio - Lojas 307 e 308 Av Menino Marcelo, 3800, Cidade Universitária"
                 }
             }
             Container {
@@ -171,7 +183,16 @@ Av. Fernandes Lima"
                 Label {
                     multiline: true
                     text: "Telefones:
-Endereços:"
+Maceió Shopping - (82) 3355-4171
+Parque Shopping - (82) 3221-9546
+Jatiúca - (82) 3231-4080
+Endereços:
+Maceió Shopping - Loja 10, Avenida Comendador Gustavo Paiva 2990, Mangabeiras
+Parque Shopping - Av. Comendador Gustavo Paiva, 5945
+Praça Centenário, 906, Farol
+Travessa Dr. Antônio Gouveia, 1084, Pajuçara
+Rua Esther da Costa Barros, 87, Jatiúca
+Av. Menino Marcelo, 9621, Barro Duro"
                 }
             }
         
