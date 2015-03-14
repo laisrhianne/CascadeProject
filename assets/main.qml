@@ -39,7 +39,7 @@ NavigationPane {
                 }
                 Button {
                     text: "Hue"
-                    color: Color.Green
+                    color: Color.Yellow
                 }
                 Button {
                     text: "Br br"
