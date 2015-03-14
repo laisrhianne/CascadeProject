@@ -16,99 +16,24 @@
 
 import bb.cascades 1.4
 
-NavigationPane {
-    property string teste: "teste"
-    id: navigationpane1
-    Page {
-        Container {        id: containerID
-            background: imagemFundo.imagePaint
-            attachedObjects: [
-                ImagePaintDefinition {
-                    id: imagemFundo
-                    imageSource: "asset:///images/Toushirou-Hitsugaya-image-toushirou-hitsugaya-36747676-2309-1732.jpg"
-                }
-            ]
-            
-            layout: DockLayout {}
-            Container {
-                horizontalAlignment: HorizontalAlignment.Center
-                verticalAlignment: VerticalAlignment.Center
-                Button {
-                    color: Color.create("#FF0000") 
-                    text: "Hue"
-                }
-                Button {
-                    text: "Hue"
-                    color: Color.Yellow
-                }
-                Button {
-                    text: "Br br"
-                    color: Color.Gray            }
-            }
-            Container {
-                horizontalAlignment: HorizontalAlignment.Center
-                background: Color.create("#00B8F")
-                Label {
-                    // Localized text with the dynamic translation and locale updates support
-                    text: "Best app ever"
-                    textStyle.base: SystemDefaults.TextStyles.BigText
-                    textStyle.color: Color.Yellow
-                    textStyle.fontFamily: "Impact"
-                    textStyle.fontSize: FontSize.PointValue
-                    textStyle.fontSizeValue: ("18")
-                }     
-            }
-            
-            Container {
-                verticalAlignment: VerticalAlignment.Bottom
-                horizontalAlignment: HorizontalAlignment.Center
-                Button {
-                    
-                    color: Color.create("#6959CD")
-                    text: "Lucas "
-                    onClicked: {
-                        text= "Asa"
-                        navigationpane1.push(asa)
-                       }
-                
-                    }
-        
-                
-                
-                Button {
-                    
-                    color: Color.create("#00B2EE")
-                    text: "Laís"
-                }
-                Button {
-                    color: Color.create("#254117")
-                    text: "Catálogo Chef Peixoto"
-                    onClicked: {
-                        text= "Catálogo"
-                        navigationpane1.push(page2)
-                
-                    }
-                }
-            }
-        
+TabbedPane {
+    showTabsOnActionBar: true
+    Tab {
+        title: "Início"
+        EXP {
+            id: exp
         }
+    
+    
     }
+    Tab {
+        title: ("Favoritos")
+        description: "Adicione aos favoritos"
+        Favs {
+            id: favs
+            
+        }
     
-    attachedObjects: [
-        
-        
-      Page2 {
-          id: page2
-      },
-      FastFood {
-          id: fastfood
-      },
-      ASA {
-          id: asa
-      }
-        
-    ]
-    
+    }
+
 }
-
-
